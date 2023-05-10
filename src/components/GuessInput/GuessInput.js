@@ -11,8 +11,8 @@ function GuessInput({ handleSubmitGuess }) {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     if (guessInput.length === 5) {
-      setGuessInput("");
       handleSubmitGuess(guessInput);
+      setGuessInput("");
     }
   };
 
